@@ -1,0 +1,10 @@
+sunny,big,small,yes
+sunny,med,small,yes
+sunny,med,big,yes
+sunny,no,small,yes
+sunny,big,big,yes
+rainy,no,small,no
+rainy,med,small,yes
+rainy,big,big,yes
+rainy,no,big,no
+rainy,med,big,no
