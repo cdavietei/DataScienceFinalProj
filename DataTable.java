@@ -12,6 +12,14 @@ public class DataTable<T> {
     this.targetAttribute = targetAttribute;
   }
 
+  public List<Attribute<T>> getAttributes() {
+    return this.attributes;
+  }
+
+  public Attribute<T> getTargetAttribute() {
+    return this.targetAttribute;
+  }
+
   public boolean attributesEmpty() {
     return attributes.isEmpty();
   }

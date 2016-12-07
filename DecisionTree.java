@@ -6,14 +6,45 @@ public class DecisionTree<T> {
 
   public static void main(String[] args) {
     DecisionTree<String> dTree = new DecisionTree<String>();
-    DataTable<String> dTable = dTree.parseFileToDataTable(4,"data\\sampleData.csv",",",3);
+    DataTable<String> dTable = dTree.parseFileToDataTable(14,"data\\processed.cleveland.data",",",13);
     dTree.root = new TreeNode<String>();
     dTree.root = dTree.root.buildTree(dTable);
 
-    List<Attribute<String>> testAttributes = dTree.parseFileToAttributeList(3,"data\\sampleTestData.csv",",");
-    for (List<String> list : dTree.transpose(testAttributes)) {
-      dTree.root.predict(list);
+    int total = 0;
+    int correct = 0;
+    int wrong = 0;
+    int falsePositives = 0;
+    double accuracy = 0.0;
+    double falsePositivePercent = 0.0;
+
+    DataTable<String> resultTable = dTree.parseFileToDataTable(14,"data\\reprocessed.hungarian.data",",",13);
+    resultTable.printTable();
+    List<Attribute<String>> testAttributes = resultTable.getAttributes();
+    Attribute<String> targetAttribute = resultTable.getTargetAttribute();
+
+    List<List<String>> lists = dTree.transpose(testAttributes);
+    for (List<String> list : lists) {
+      String prediction = dTree.root.predict(list);
+      System.out.println(prediction);
+      if(prediction.equals(targetAttribute.get(lists.indexOf(list)))) {
+        correct++;
+      } else {
+        wrong++;
+        if (prediction.equals("present")) {
+          falsePositives++;
+        }
+      }
+      total++;
     }
+    accuracy = (double) correct / total;
+    falsePositivePercent = (double) falsePositives / total;
+
+    System.out.println("Total: " + total);
+    System.out.println("Correct: " + correct);
+    System.out.println("Wrong: " + wrong);
+    System.out.println("False positives: " + falsePositives);
+    System.out.println("Accuracy: " + (accuracy * 100));
+    System.out.println("False positive %: " + (falsePositivePercent * 100));
   }
 
   public List<List<T>> transpose(List<Attribute<T>> attrList) {

@@ -40,20 +40,17 @@ public class TreeNode<T> {
     return this;
   }
 
-  public void predict(List<T> attrList) {
-    if (attrList.isEmpty()) {
-      return;
-    }
-    if (!label.equals("")) {
-      System.out.println(label);
+  public String predict(List<T> attrList) {
+    if (attrList.isEmpty() || !label.equals("")) {
+      return label;
     } else {
       for (TreeNode<T> node : children) {
         if (attrList.get(node.attributeNumber).equals(node.attributeValue)) {
-          node.predict(attrList);
-          break;
+          return node.predict(attrList);
         }
       }
     }
+    return "";
   }
 
   public void preorder() {
