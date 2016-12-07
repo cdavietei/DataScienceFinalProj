@@ -26,23 +26,34 @@ public class TreeNode<T> {
       this.label = data.targetMajority().toString();
     } else {
       Attribute<T> nextAttr = data.maxInfoGainAttribute();
-      System.out.println("Building node with attribute " + nextAttr.getAttributeNumber());
       List<T> attrValues = nextAttr.getDistinctValues();
 
       for (T value : attrValues) {
         int attrNumber = nextAttr.getAttributeNumber();
         TreeNode<T> newNode = new TreeNode(attrNumber, value);
         DataTable<T> filteredData = data.filterAttributes(data.indexOfAttribute(attrNumber), value);
-        System.out.println("Attribute " + attrNumber + ":" + value.toString());
-        /*data.printTable();
-        System.out.println("------");
-        filteredData.printTable();
-        System.out.println();*/
+
         children.add(newNode);
         newNode.buildTree(filteredData);
       }
     }
     return this;
+  }
+
+  public void predict(List<T> attrList) {
+    if (attrList.isEmpty()) {
+      return;
+    }
+    if (!label.equals("")) {
+      System.out.println(label);
+    } else {
+      for (TreeNode<T> node : children) {
+        if (attrList.get(node.attributeNumber).equals(node.attributeValue)) {
+          node.predict(attrList);
+          break;
+        }
+      }
+    }
   }
 
   public void preorder() {
