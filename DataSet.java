@@ -4,41 +4,31 @@ import java.io.*;
 public class DataSet {
 
     protected Double[][] mDataSet;
-    protected Double[] mEntropyTable;
-    protected ArrayList<HashMap<Double, Integer>> mFrequencies;
 
     public DataSet() {}
 
     public DataSet(int instanceCount, int attributeNum) {
         mDataSet = new Double[instanceCount][attributeNum];
-        mEntropyTable = new Double[attributeNum];
-        mFrequencies = new ArrayList<HashMap<Double,Integer>>();
     }
 
     public static void main(String[] args) {
       DataSet ds = new DataSet();
       Double[] Y = new Double[] {0.0, 1.0, 1.0};
       Double[] X = new Double[] {0.0, 0.0, 1.0};
+
       System.out.println(ds.informationGain(Y,X));
 
-        /*double ent = entropyOf(2.0/8)+entropyOf(2.0/8);
-        System.out.println(ent);
+      Double[][] combinedArr = new Double[3][2];
+      for (int i = 0; i < 3; i++) {
+        combinedArr[i][0] = X[i];
+        combinedArr[i][1] = Y[i];
+      }
 
-        System.out.println((2.0/8)*entropyOf(2.0/8) + (2.0/8)*entropyOf(2.0/8));
-
-        int[] freq = {4,2,2};
-        int[][] probs = {
-            {0,1},
-            {1,0},
-            {2,1},
-            {0,0},
-            {0,0},
-            {2,1},
-            {1,0},
-            {0,1}
-        };
-
-        printArray(conditionalEntropy(probs, 8, freq));*/
+      printArray2D(combinedArr);
+      System.out.println();
+      printArray2D(filterDataTable(combinedArr,1,1.0));
+      System.out.println();
+      printArray2D(filterDataTable(combinedArr,1,0.0));
     }
 
 
@@ -71,25 +61,6 @@ public class DataSet {
                 mDataSet[i][j] = Double.parseDouble(line[j]);
         }
     }//parseLine(String[], String, int)
-
-
-    /*public void calculateFrequencies() {
-
-        for(int j=0; j<mDataSet[0].length; j++) {
-            HashMap<Double, Integer> attrMap = new HashMap<Double, Integer>();
-
-            for(int i=0; i<mDataSet.length; i++) {
-                int value = 0;
-                double key = mDataSet[i][j];
-                if(key !=  Double.MIN_VALUE && attrMap.containsKey(key))
-                    value = attrMap.get(key);
-
-                attrMap.put(key, value+1);
-            }//for i
-            mFrequencies.add(attrMap);
-        }//for j
-
-    }//calculateFrequencies()*/
 
     /***** Information Gain Calculations ******/
 
@@ -183,10 +154,34 @@ public class DataSet {
       return filteredAttributeList.toArray(new Double[0]);
     }
 
+    /**
+     * Returns a subset of the data set only containing rows where column
+     * filterAttributeColNum equals filterVal
+     */
+    public static Double[][] filterDataTable(Double[][] table,
+                                      int filterAttributeColNum,
+                                      Double filterVal) {
+      List<Double[]> filteredDataList = new ArrayList<Double[]>();
 
-    public static void printArray(double[] array) {
-        for(double i : array)
+      for (int i = 0; i < table.length; i++) {
+        if (table[i][filterAttributeColNum].equals(filterVal)) {
+          filteredDataList.add(table[i]);
+        }
+      }
+
+      return filteredDataList.toArray(new Double[0][0]);
+    }
+
+
+    public static void printArray(Double[] array) {
+        for(Double i : array)
             System.out.print(i+" ");
         System.out.println();
+    }
+
+    public static void printArray2D(Double[][] array) {
+      for (Double[] arr : array) {
+        printArray(arr);
+      }
     }
 }
