@@ -22,9 +22,8 @@ public class TreeNode<T> {
   }
 
   public TreeNode buildTree(DataTable<T> data) {
-    if (data.attributesEmpty() || data.allTargetsSame()) {
-      this.label = data.targetMajority().toString();
-    } else {
+    this.label = data.targetMajority().toString();
+    if (!data.attributesEmpty() && !data.allTargetsSame()) {
       Attribute<T> nextAttr = data.maxInfoGainAttribute();
       List<T> attrValues = nextAttr.getDistinctValues();
 
@@ -41,16 +40,17 @@ public class TreeNode<T> {
   }
 
   public String predict(List<T> attrList) {
-    if (attrList.isEmpty() || !label.equals("")) {
-      return label;
-    } else {
+    String prediction = label;
+
+    if (!attrList.isEmpty() && !children.isEmpty()) {
       for (TreeNode<T> node : children) {
         if (attrList.get(node.attributeNumber).equals(node.attributeValue)) {
-          return node.predict(attrList);
+          prediction = node.predict(attrList);
         }
       }
     }
-    return "";
+    
+    return prediction;
   }
 
   public void preorder() {

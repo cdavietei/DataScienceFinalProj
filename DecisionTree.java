@@ -6,7 +6,7 @@ public class DecisionTree<T> {
 
   public static void main(String[] args) {
     DecisionTree<String> dTree = new DecisionTree<String>();
-    DataTable<String> dTable = dTree.parseFileToDataTable(17,"data/trainingSet.csv",",",0);
+    DataTable<String> dTable = dTree.parseFileToDataTable(14,"data/threshold/processed.cleveland.csv",",",13);
     dTree.root = new TreeNode<String>();
     dTree.root = dTree.root.buildTree(dTable);
 
@@ -17,7 +17,7 @@ public class DecisionTree<T> {
     double accuracy = 0.0;
     double falsePositivePercent = 0.0;
 
-    DataTable<String> resultTable = dTree.parseFileToDataTable(17,"data/testingSet.csv",",",0);
+    DataTable<String> resultTable = dTree.parseFileToDataTable(14,"data/threshold/processed.switzerland.csv",",",13);
     //resultTable.printTable();
     List<Attribute<String>> testAttributes = resultTable.getAttributes();
     Attribute<String> targetAttribute = resultTable.getTargetAttribute();
@@ -25,13 +25,17 @@ public class DecisionTree<T> {
     List<List<String>> lists = dTree.transpose(testAttributes);
     for (List<String> list : lists) {
       String prediction = dTree.root.predict(list);
-      System.out.println("Prediction: "+prediction+"\t Target Value: "+targetAttribute.get(lists.indexOf(list)));
+      System.out.print("Prediction: "+prediction+"\t Target Value: "+targetAttribute.get(lists.indexOf(list))+" ");
       if(prediction.equals(targetAttribute.get(lists.indexOf(list)))) {
+        System.out.println("correct");
         correct++;
       } else {
         wrong++;
         if (prediction.equals("'present'")) {
+          System.out.println("false positive");
           falsePositives++;
+        } else {
+          System.out.println("incorrect");
         }
       }
       total++;
