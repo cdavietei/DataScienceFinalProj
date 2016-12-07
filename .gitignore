@@ -1,3 +1,5 @@
-*.gdoc
 *.gsheet
+*.gdoc
+DecisionTrees/.gradle/
+DecisionTrees/.gradlew/
 *.class
