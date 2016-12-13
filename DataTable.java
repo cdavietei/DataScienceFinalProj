@@ -164,7 +164,7 @@ public class DataTable<T> {
       }
     }
 
-    return new Attribute(attribute1.getAttributeNumber(), filteredAttributeList);
+    return new Attribute(attribute1.getAttributeName(), filteredAttributeList);
   }
 
   /**
@@ -177,10 +177,10 @@ public class DataTable<T> {
     // initialize the list of filtered attributes to be returned
     List<Attribute<T>> filteredAttributeList = new ArrayList<Attribute<T>>();
     for (int i = 0; i < attributes.size(); i++) {
-      filteredAttributeList.add(new Attribute<T>(attributes.get(i).getAttributeNumber()));
+      filteredAttributeList.add(new Attribute<T>(attributes.get(i).getAttributeName()));
     }
     // create the new attribute to contain the filtered targetAttribute
-    Attribute<T> filteredTargetAttribute = new Attribute<T>(targetAttribute.getAttributeNumber());
+    Attribute<T> filteredTargetAttribute = new Attribute<T>(targetAttribute.getAttributeName());
 
     Attribute<T> filterAttribute = attributes.get(attrNumber);
     for (int i = 0; i < filterAttribute.size(); i++) {
@@ -202,6 +202,14 @@ public class DataTable<T> {
     return new DataTable(filteredAttributeList, filteredTargetAttribute);
   }
 
+  public HashMap<String,Integer> getAttributeNameHash() {
+    HashMap<String,Integer> attributeNameHash = new HashMap<String,Integer>();
+    for (int i = 0; i < attributes.size(); i++) {
+      attributeNameHash.put(attributes.get(i).attributeName, i);
+    }
+    return attributeNameHash;
+  }
+
   public void printTable() {
     for (int i = 0; i < targetAttribute.size(); i++) {
       for (Attribute<T> attr: attributes) {
@@ -211,9 +219,9 @@ public class DataTable<T> {
     }
   }
 
-  public int indexOfAttribute(int attrNumber) {
+  public int indexOfAttribute(String attributeName) {
     for (int i = 0; i < attributes.size(); i++) {
-      if (attributes.get(i).getAttributeNumber() == attrNumber) {
+      if (attributes.get(i).getAttributeName().equals(attributeName)) {
         return i;
       }
     }

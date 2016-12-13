@@ -2,16 +2,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Attribute<T> {
-  public int attributeNumber;
+  public String attributeName;
   public List<T> values;
 
-  public Attribute(int attributeNumber) {
-    this.attributeNumber = attributeNumber;
+  public Attribute() {
+    this.attributeName = "";
     values = new ArrayList<T>();
   }
 
-  public Attribute(int attributeNumber, List<T> values) {
-    this.attributeNumber = attributeNumber;
+  public Attribute(String attributeName) {
+    this.attributeName = attributeName;
+    values = new ArrayList<T>();
+  }
+
+  public Attribute(String attributeName, List<T> values) {
+    this.attributeName = attributeName;
     this.values = values;
   }
 
@@ -27,8 +32,8 @@ public class Attribute<T> {
     return this.values;
   }
 
-  public int getAttributeNumber() {
-    return this.attributeNumber;
+  public String getAttributeName() {
+    return this.attributeName;
   }
 
   public T get(int i) {

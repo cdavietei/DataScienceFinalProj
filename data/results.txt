@@ -1,69 +1,27 @@
 Prediction: 'not_present'	 Target Value: 'not_present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'not_present'	 Target Value: 'not_present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'not_present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'not_present'	 Target Value: 'not_present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'not_present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'present'	 Target Value: 'not_present' false positive
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
 Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
@@ -71,59 +29,409 @@ Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'not_present' false positive
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'not_present' false positive
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'not_present' false positive
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'not_present' false positive
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'not_present'	 Target Value: 'not_present' correct
 Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'present'	 Target Value: 'present' correct
-Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
 Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'present'	 Target Value: 'present' correct
 Prediction: 'not_present'	 Target Value: 'not_present' correct
 Prediction: 'not_present'	 Target Value: 'present' incorrect
 Prediction: 'not_present'	 Target Value: 'present' incorrect
-Total: 123
-Correct: 57
-Wrong: 66
-False positives: 1
-Accuracy: 46.34146341463415
-False positive %: 0.8130081300813009
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'present'	 Target Value: 'present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Prediction: 'not_present'	 Target Value: 'not_present' correct
+Prediction: 'not_present'	 Target Value: 'present' incorrect
+Total: 200
+Correct: 70
+Wrong: 130
+False positives: 5
+Accuracy: 35.0
+False positive %: 2.5
+└── root
+    ├── thal:6
+    │   ├── chol:230--'not_present'
+    │   ├── chol:190--'not_present'
+    │   ├── chol:250--'present'
+    │   ├── chol:270--'present'
+    │   ├── chol:240--'present'
+    │   ├── chol:180
+    │   │   ├── age:52--'not_present'
+    │   │   └── age:56--'present'
+    │   ├── chol:200--'not_present'
+    │   ├── chol:210--'present'
+    │   ├── chol:310--'present'
+    │   ├── chol:220
+    │   │   ├── age:66--'not_present'
+    │   │   └── age:58--'present'
+    │   ├── chol:160--'present'
+    │   └── chol:170--'present'
+    ├── thal:7
+    │   ├── age:67
+    │   │   ├── sex:1--'present'
+    │   │   └── sex:0--'not_present'
+    │   ├── age:60--'present'
+    │   ├── age:63--'present'
+    │   ├── age:53
+    │   │   ├── chol:200--'present'
+    │   │   ├── chol:220--'not_present'
+    │   │   └── chol:280--'present'
+    │   ├── age:44--'not_present'
+    │   ├── age:52
+    │   │   ├── trestbps:170--'not_present'
+    │   │   ├── trestbps:120--'present'
+    │   │   ├── trestbps:150--'not_present'
+    │   │   └── trestbps:100--'not_present'
+    │   ├── age:48--'present'
+    │   ├── age:58
+    │   │   ├── chol:220
+    │   │   │   ├── cp:3--'present'
+    │   │   │   └── cp:2--'not_present'
+    │   │   ├── chol:230--'present'
+    │   │   ├── chol:210--'present'
+    │   │   ├── chol:270--'present'
+    │   │   ├── chol:240--'not_present'
+    │   │   ├── chol:300--'present'
+    │   │   └── chol:250--'present'
+    │   ├── age:40
+    │   │   ├── cp:4--'present'
+    │   │   └── cp:1--'not_present'
+    │   ├── age:59
+    │   │   ├── chol:230
+    │   │   │   ├── trestbps:130--'not_present'
+    │   │   │   └── trestbps:110--'present'
+    │   │   ├── chol:320--'present'
+    │   │   ├── chol:170--'present'
+    │   │   ├── chol:280--'present'
+    │   │   └── chol:270--'not_present'
+    │   ├── age:43
+    │   │   ├── trestbps:120--'present'
+    │   │   ├── trestbps:130--'present'
+    │   │   └── trestbps:110--'not_present'
+    │   ├── age:55--'present'
+    │   ├── age:65
+    │   │   ├── trestbps:150--'present'
+    │   │   ├── trestbps:120--'not_present'
+    │   │   └── trestbps:130--'present'
+    │   ├── age:50--'present'
+    │   ├── age:54
+    │   │   ├── thalach:100--'present'
+    │   │   ├── thalach:110--'present'
+    │   │   ├── thalach:160--'not_present'
+    │   │   ├── thalach:150--'not_present'
+    │   │   ├── thalach:120--'present'
+    │   │   ├── thalach:140--'not_present'
+    │   │   └── thalach:190--'present'
+    │   ├── age:41--'present'
+    │   ├── age:51
+    │   │   ├── cp:4--'present'
+    │   │   └── cp:3--'not_present'
+    │   ├── age:62
+    │   │   ├── chol:260--'present'
+    │   │   ├── chol:160--'present'
+    │   │   ├── chol:230--'not_present'
+    │   │   └── chol:280--'present'
+    │   ├── age:68
+    │   │   ├── trestbps:180--'present'
+    │   │   ├── trestbps:110--'not_present'
+    │   │   └── trestbps:140--'present'
+    │   ├── age:49--'present'
+    │   ├── age:57
+    │   │   ├── chol:220--'present'
+    │   │   ├── chol:280--'present'
+    │   │   ├── chol:200--'not_present'
+    │   │   ├── chol:270--'present'
+    │   │   ├── chol:120--'not_present'
+    │   │   ├── chol:260--'present'
+    │   │   ├── chol:330--'present'
+    │   │   ├── chol:240--'present'
+    │   │   └── chol:130--'present'
+    │   ├── age:61--'present'
+    │   ├── age:39--'present'
+    │   ├── age:56
+    │   │   ├── cp:4--'present'
+    │   │   ├── cp:1--'not_present'
+    │   │   └── cp:2--'not_present'
+    │   ├── age:70--'present'
+    │   ├── age:35--'present'
+    │   ├── age:64
+    │   │   ├── chol:300--'present'
+    │   │   ├── chol:310--'not_present'
+    │   │   ├── chol:260--'not_present'
+    │   │   └── chol:220--'not_present'
+    │   ├── age:46
+    │   │   ├── cp:2--'not_present'
+    │   │   └── cp:4--'present'
+    │   ├── age:42--'not_present'
+    │   ├── age:69--'present'
+    │   ├── age:45--'present'
+    │   ├── age:38--'present'
+    │   └── age:66--'present'
+    ├── thal:3
+    │   ├── age:67
+    │   │   ├── sex:1--'present'
+    │   │   └── sex:0--'not_present'
+    │   ├── age:62
+    │   │   ├── chol:260--'present'
+    │   │   ├── chol:200--'not_present'
+    │   │   ├── chol:390--'not_present'
+    │   │   ├── chol:290--'present'
+    │   │   └── chol:240--'present'
+    │   ├── age:37--'not_present'
+    │   ├── age:41--'not_present'
+    │   ├── age:56
+    │   │   ├── cp:2--'not_present'
+    │   │   └── cp:4--'present'
+    │   ├── age:57
+    │   │   ├── cp:4--'not_present'
+    │   │   ├── cp:3--'not_present'
+    │   │   └── cp:2--'present'
+    │   ├── age:54
+    │   │   ├── thalach:160--'not_present'
+    │   │   ├── thalach:150--'not_present'
+    │   │   ├── thalach:170--'not_present'
+    │   │   ├── thalach:100--'present'
+    │   │   └── thalach:110--'present'
+    │   ├── age:48--'not_present'
+    │   ├── age:49
+    │   │   ├── cp:2--'not_present'
+    │   │   ├── cp:3--'present'
+    │   │   └── cp:4--'not_present'
+    │   ├── age:64
+    │   │   ├── trestbps:110--'not_present'
+    │   │   ├── trestbps:140--'present'
+    │   │   ├── trestbps:120--'present'
+    │   │   ├── trestbps:180--'not_present'
+    │   │   └── trestbps:130--'not_present'
+    │   ├── age:58
+    │   │   ├── cp:1--'not_present'
+    │   │   ├── cp:2--'present'
+    │   │   ├── cp:3--'not_present'
+    │   │   └── cp:4--'not_present'
+    │   ├── age:50--'not_present'
+    │   ├── age:66
+    │   │   ├── trestbps:150--'not_present'
+    │   │   ├── trestbps:120--'not_present'
+    │   │   ├── trestbps:110--'present'
+    │   │   └── trestbps:140--'not_present'
+    │   ├── age:43--'not_present'
+    │   ├── age:69--'not_present'
+    │   ├── age:44
+    │   │   ├── cp:3--'not_present'
+    │   │   ├── cp:4--'present'
+    │   │   └── cp:2--'not_present'
+    │   ├── age:42--'not_present'
+    │   ├── age:61
+    │   │   ├── cp:3--'not_present'
+    │   │   ├── cp:4--'present'
+    │   │   └── cp:1--'present'
+    │   ├── age:71--'not_present'
+    │   ├── age:59
+    │   │   ├── cp:3--'not_present'
+    │   │   ├── cp:2--'not_present'
+    │   │   ├── cp:4
+    │   │   │   ├── sex:0--'present'
+    │   │   │   └── sex:1--'not_present'
+    │   │   └── cp:1--'present'
+    │   ├── age:51--'not_present'
+    │   ├── age:65
+    │   │   ├── sex:0--'not_present'
+    │   │   └── sex:1--'present'
+    │   ├── age:53--'not_present'
+    │   ├── age:46
+    │   │   ├── sex:0--'not_present'
+    │   │   └── sex:1--'present'
+    │   ├── age:60
+    │   │   ├── chol:180--'present'
+    │   │   ├── chol:310--'not_present'
+    │   │   ├── chol:300--'present'
+    │   │   ├── chol:170--'not_present'
+    │   │   └── chol:240--'not_present'
+    │   ├── age:45--'not_present'
+    │   ├── age:39--'not_present'
+    │   ├── age:52
+    │   │   ├── cp:2--'not_present'
+    │   │   ├── cp:3--'not_present'
+    │   │   └── cp:4--'present'
+    │   ├── age:47
+    │   │   ├── chol:250--'not_present'
+    │   │   ├── chol:240--'present'
+    │   │   ├── chol:200--'not_present'
+    │   │   └── chol:270--'present'
+    │   ├── age:63
+    │   │   ├── cp:3--'not_present'
+    │   │   ├── cp:2--'not_present'
+    │   │   └── cp:4--'present'
+    │   ├── age:34--'not_present'
+    │   ├── age:35--'not_present'
+    │   ├── age:29--'not_present'
+    │   ├── age:55
+    │   │   ├── cp:2--'not_present'
+    │   │   └── cp:4--'present'
+    │   ├── age:70
+    │   │   ├── cp:4--'present'
+    │   │   └── cp:2--'not_present'
+    │   ├── age:77--'present'
+    │   ├── age:68--'not_present'
+    │   ├── age:74--'not_present'
+    │   ├── age:76--'not_present'
+    │   └── age:38--'not_present'
+    └── thal:unknown
+        ├── age:53--'not_present'
+        └── age:52--'present'
