@@ -73,9 +73,6 @@ public class DecisionTree<T> {
   public DataTable<String> parseFileToDataTable(int attrCount, String fileName, String splitString, int targetColNumber) {
     List<Attribute<String>> attrList = parseFileToAttributeList(attrCount, fileName, splitString);
     Attribute<String> targetAttribute = attrList.remove(targetColNumber);
-    /*for (int i = targetColNumber; i < attrList.size(); i++) {
-      attrList.get(i).attributeNumber--;
-    }*/
 
     return new DataTable<String>(attrList, targetAttribute);
   }

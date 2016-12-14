@@ -12,52 +12,6 @@ public class DataTable<T> {
     this.targetAttribute = targetAttribute;
   }
 
-  public List<Attribute<T>> getAttributes() {
-    return this.attributes;
-  }
-
-  public Attribute<T> getTargetAttribute() {
-    return this.targetAttribute;
-  }
-
-  public boolean attributesEmpty() {
-    return attributes.isEmpty();
-  }
-
-  public boolean allTargetsSame() {
-    return targetAttribute.allEqual();
-  }
-
-  // returns the most commonly occurring value of the targetAttribute
-  public T targetMajority() {
-    HashMap<T,Integer> supportHash = getSupportHash(targetAttribute);
-
-    T majorityValue = null;
-
-    for (T key : supportHash.keySet()) {
-      if (majorityValue == null || (supportHash.get(key) > supportHash.get(majorityValue))) {
-        majorityValue = key;
-      }
-    }
-
-    return majorityValue;
-  }
-
-  public HashMap<T,Integer> getSupportHash(Attribute<T> attribute) {
-    HashMap<T,Integer> supportHash = new HashMap<T,Integer>();
-
-    for (T val : attribute.getValues()) {
-      Integer count = supportHash.get(val);
-      if (count == null) {
-        supportHash.put(val, 1);
-      } else {
-        supportHash.put(val, count + 1);
-      }
-    }
-
-    return supportHash;
-  }
-
   // returns the attribute x which maximizes information gain of result given x
   public Attribute<T> maxInfoGainAttribute() {
     Attribute<T> maxInfoGainAttribute = attributes.get(0);
@@ -120,7 +74,7 @@ public class DataTable<T> {
   }
 
   public HashMap<T,Double> getProbabilities(Attribute<T> attribute) {
-    HashMap<T,Integer> supportHash = getSupports(attribute);
+    HashMap<T,Integer> supportHash = getSupportHash(attribute);
     HashMap<T,Double> probabilityHash = new HashMap<T,Double>();
 
     for (T key : supportHash.keySet()) {
@@ -131,23 +85,52 @@ public class DataTable<T> {
     return probabilityHash;
   }
 
-  public HashMap<T,Integer> getSupports(Attribute<T> attribute) {
-    HashMap<T,Integer> supportHash = new HashMap<T,Integer>();
+  public Double entropyCalc(Double probability) {
+    return -1 * probability * (Math.log(probability) / Math.log(2));
+  }
 
-    for (T value : attribute.getValues()) {
-      Integer count = supportHash.get(value);
-      if (count == null) {
-        supportHash.put(value, 1);
-      } else {
-        supportHash.put(value, count + 1);
+
+  // returns the most commonly occurring value of the targetAttribute
+  public T targetMajority() {
+    HashMap<T,Integer> supportHash = getSupportHash(targetAttribute);
+
+    T majorityValue = null;
+
+    for (T key : supportHash.keySet()) {
+      if (majorityValue == null || (supportHash.get(key) > supportHash.get(majorityValue))) {
+        majorityValue = key;
       }
     }
 
-    return supportHash;
+    return majorityValue;
   }
 
-  public Double entropyCalc(Double probability) {
-    return -1 * probability * (Math.log(probability) / Math.log(2));
+  /**
+   * Returns a subset of the data set only containing rows where column
+   * attrNumber equals filterVal. The column on which the table is
+   * filtered is removed from the returned DataTable
+   */
+   @SuppressWarnings("unchecked")
+  public DataTable<T> filterAttributes(int attrNumber, T attrValue) {
+    List<Attribute<T>> filteredAttributeList = new ArrayList<Attribute<T>>();
+    for (int i = 0; i < attributes.size(); i++) {
+      // Add all attributes, excluding the one used for filtering
+      if (i != attrNumber) {
+        // Filter the current attribute on the filter column and add to the list
+        Attribute<T> filteredAttribute = filterAttribute(attributes.get(i),
+                                                         attributes.get(attrNumber),
+                                                         attrValue);
+        filteredAttributeList.add(filteredAttribute);
+      }
+    }
+
+    // Filter the target attribute so it matches the rest of the table
+    Attribute<T> filteredTargetAttribute = filterAttribute(targetAttribute,
+                                                           attributes.get(attrNumber),
+                                                           attrValue);
+
+    // Return the subset table with the correct rows and column removed
+    return new DataTable(filteredAttributeList, filteredTargetAttribute);
   }
 
   // returns only values of attribute1 where attribute2 is equal to attr2Value
@@ -167,39 +150,20 @@ public class DataTable<T> {
     return new Attribute(attribute1.getAttributeName(), filteredAttributeList);
   }
 
-  /**
-   * Returns a subset of the data set only containing rows where column
-   * filterAttributeColNum equals filterVal. The column on which the table is
-   * filtered is removed from the returned DataTable
-   */
-   @SuppressWarnings("unchecked")
-  public DataTable<T> filterAttributes(int attrNumber, T attrValue) {
-    // initialize the list of filtered attributes to be returned
-    List<Attribute<T>> filteredAttributeList = new ArrayList<Attribute<T>>();
-    for (int i = 0; i < attributes.size(); i++) {
-      filteredAttributeList.add(new Attribute<T>(attributes.get(i).getAttributeName()));
-    }
-    // create the new attribute to contain the filtered targetAttribute
-    Attribute<T> filteredTargetAttribute = new Attribute<T>(targetAttribute.getAttributeName());
+  // returns a HashMap where each attribute value is hashed to the number of times it appears
+  public HashMap<T,Integer> getSupportHash(Attribute<T> attribute) {
+    HashMap<T,Integer> supportHash = new HashMap<T,Integer>();
 
-    Attribute<T> filterAttribute = attributes.get(attrNumber);
-    for (int i = 0; i < filterAttribute.size(); i++) {
-      if (filterAttribute.get(i).equals(attrValue)) {
-        // copy the values from the original attributes to the new filtered list
-        for (int j = 0; j < attributes.size(); j++) {
-          Attribute<T> originalAttribute = attributes.get(j);
-          Attribute<T> newAttribute = filteredAttributeList.get(j);
-          newAttribute.add(originalAttribute.get(i));
-        }
-        // add the corresponding targetAttribute value to the new targetAttribute
-        filteredTargetAttribute.add(targetAttribute.get(i));
+    for (T val : attribute.getValues()) {
+      Integer count = supportHash.get(val);
+      if (count == null) {
+        supportHash.put(val, 1);
+      } else {
+        supportHash.put(val, count + 1);
       }
     }
 
-    // remove the attribute use to filter
-    filteredAttributeList.remove(attrNumber);
-
-    return new DataTable(filteredAttributeList, filteredTargetAttribute);
+    return supportHash;
   }
 
   public HashMap<String,Integer> getAttributeNameHash() {
@@ -226,5 +190,21 @@ public class DataTable<T> {
       }
     }
     return 0;
+  }
+
+  public List<Attribute<T>> getAttributes() {
+    return this.attributes;
+  }
+
+  public Attribute<T> getTargetAttribute() {
+    return this.targetAttribute;
+  }
+
+  public boolean attributesEmpty() {
+    return attributes.isEmpty();
+  }
+
+  public boolean allTargetsSame() {
+    return targetAttribute.allEqual();
   }
 }
