@@ -28,6 +28,16 @@ public class Attribute<T> {
     return allEqual;
   }
 
+  public List<T> getDistinctValues() {
+    List<T> distinctValues = new ArrayList<T>();
+    for (T val : values) {
+      if (!distinctValues.contains(val)) {
+        distinctValues.add(val);
+      }
+    }
+    return distinctValues;
+  }
+
   public List<T> getValues() {
     return this.values;
   }
@@ -38,17 +48,6 @@ public class Attribute<T> {
 
   public T get(int i) {
     return values.get(i);
-  }
-
-  public List<T> getDistinctValues() {
-    List<T> distinctValues = new ArrayList<T>();
-    for (T val : values) {
-      if (!distinctValues.contains(val)) {
-        distinctValues.add(val);
-      }
-    }
-
-    return distinctValues;
   }
 
   public int size() {
