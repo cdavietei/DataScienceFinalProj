@@ -122,7 +122,7 @@ public class Main {
      * @param   unknownChar The character representing a missing value in the dataset
      * @param   separator   The field separator for each line
      * @return  An Instances object representing the dataset
-     * @throws  Exception  Generic Exception thrown by Weka if the classifyInstance() method fails
+     * @throws  Exception  Generic Exception thrown by Weka if the getDataSet() method fails
      */
     public static Instances getInstances(String fileName, String unknownChar, String separator, int classIndex) throws Exception {
 
@@ -140,7 +140,7 @@ public class Main {
      * @param   unknownChar The character representing a missing value in the dataset
      * @param   separator   The field separator for each line
      * @return  A Weka CSVLoader that parses the CSV file
-     * @throws  Exception  Generic Exception thrown by Weka if the classifyInstance() method fails
+     * @throws  Exception  Generic Exception thrown by Weka if the setSource() method fails
      */
     public static CSVLoader getLoader(String fileName, String unknownChar, String separator) throws Exception {
         CSVLoader loader = new CSVLoader();
